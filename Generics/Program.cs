@@ -2,35 +2,17 @@
 {
     internal class Program
     {
-        public static void toPrint(int[] inputArray)
+        public static void toPrint<T>(T[] inputArray)
         {
-
-            foreach (int element in inputArray)
+            Console.WriteLine(typeof(T) + " Array ");
+            foreach (T element in inputArray)
             {
                 Console.WriteLine(element);
             }
             Console.WriteLine("---------------------------------");
         }
 
-        public static void toPrint(double[] inputArray)
-        {
-
-            foreach (double element in inputArray)
-            {
-                Console.WriteLine(element);
-            }
-            Console.WriteLine("---------------------------------");
-        }
-
-        public static void toPrint(string[] inputArray)
-        {
-
-            foreach (string element in inputArray)
-            {
-                Console.WriteLine(element);
-            }
-            Console.WriteLine("---------------------------------");
-        }
+      
     
        static void Main(string[] args)
        {
